@@ -35,7 +35,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey("space"))
         {
 
-            if (grounded == true) {
+            if (grounded == true)
+            {
                 rb.AddForce(0, 6, 0, ForceMode.VelocityChange);
                 grounded = false;
             }
