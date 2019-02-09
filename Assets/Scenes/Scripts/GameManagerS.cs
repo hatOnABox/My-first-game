@@ -5,6 +5,6 @@ public class GameManagerS : MonoBehaviour
 {
     public void reload_game()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

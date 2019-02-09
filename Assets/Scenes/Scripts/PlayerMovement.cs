@@ -7,13 +7,14 @@ public class PlayerMovement : MonoBehaviour
     public float sidewaysForce = 20f;
     bool grounded = true;
 
+    // if player is touching the ground
     void OnCollisionEnter()
     {
         grounded = true;
     }
 
 
-    // Update is called once per frame
+    // Player movement
     void FixedUpdate()
     {
         if (rb.position.y < -4)
