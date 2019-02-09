@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scenes\Scripts\BreakTheCube.cs" />
     <Compile Include="Assets\Scenes\Scripts\dieOnCollision.cs" />
     <Compile Include="Assets\Scenes\Scripts\fireballMovementX.cs" />
     <Compile Include="Assets\Scenes\Scripts\fireballMovementY.cs" />

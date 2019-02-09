@@ -4,7 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
 
-    public float sidewaysForce = 20f;
+    public float sidewaysForce = 25f;
     bool grounded = true;
 
     // if player is touching the ground
