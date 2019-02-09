@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         {
 
             if (grounded == true) {
-                rb.AddForce(0, 7, 0, ForceMode.VelocityChange);
+                rb.AddForce(0, 6, 0, ForceMode.VelocityChange);
                 grounded = false;
             }
         }

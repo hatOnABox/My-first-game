@@ -60,8 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scenes\Scripts\dieOnCollision.cs" />
     <Compile Include="Assets\Scenes\Scripts\GameManagerS.cs" />
     <Compile Include="Assets\Scenes\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scenes\Scripts\winLevel.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/johnpaulantonovich/Desktop/My first actual game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
