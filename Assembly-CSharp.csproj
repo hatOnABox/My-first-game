@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scenes\Scripts\fireballMovementY.cs" />
     <Compile Include="Assets\Scenes\Scripts\GameManagerScript.cs" />
     <Compile Include="Assets\Scenes\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scenes\Scripts\QuitGame.cs" />
     <Compile Include="Assets\Scenes\Scripts\timer.cs" />
     <Compile Include="Assets\Scenes\Scripts\winLevel.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

@@ -8,7 +8,7 @@ public class winLevel : MonoBehaviour
         if (collision.collider.name == "Player")
         {
             //FindObjectOfType<GameManagerScript>().reload_game();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
         }
     }
 }
