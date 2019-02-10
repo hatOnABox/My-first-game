@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (rb.position.y < -4)
         {
-            FindObjectOfType<GameManagerS>().reload_game();
+            FindObjectOfType<GameManagerScript>().reload_game();
         }
 
         if (Input.GetKey("d"))

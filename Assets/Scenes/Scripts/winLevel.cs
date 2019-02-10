@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class winLevel : MonoBehaviour
@@ -8,7 +7,8 @@ public class winLevel : MonoBehaviour
     {
         if (collision.collider.name == "Player")
         {
-            FindObjectOfType<GameManagerS>().reload_game();
+            //FindObjectOfType<GameManagerScript>().reload_game();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
 }

@@ -24,7 +24,7 @@ public class fireballMovementX : MonoBehaviour
 
         if (collision.collider.tag == "Player")
         {
-            FindObjectOfType<GameManagerS>().reload_game();
+            FindObjectOfType<GameManagerScript>().reload_game();
         }
     }
 
