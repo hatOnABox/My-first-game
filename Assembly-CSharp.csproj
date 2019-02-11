@@ -66,9 +66,11 @@
     <Compile Include="Assets\Scenes\Scripts\fireballMovementX.cs" />
     <Compile Include="Assets\Scenes\Scripts\fireballMovementY.cs" />
     <Compile Include="Assets\Scenes\Scripts\GameManagerScript.cs" />
+    <Compile Include="Assets\Scenes\Scripts\HandleData.cs" />
+    <Compile Include="Assets\Scenes\Scripts\LevelTracker.cs" />
+    <Compile Include="Assets\Scenes\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scenes\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scenes\Scripts\QuitGame.cs" />
-    <Compile Include="Assets\Scenes\Scripts\timer.cs" />
     <Compile Include="Assets\Scenes\Scripts\winLevel.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/johnpaulantonovich/Desktop/My first actual game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

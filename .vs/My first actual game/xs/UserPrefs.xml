@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{95A35F64-19AC-997D-3C35-A3BB4138DB35}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/Scripts/QuitGame.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/Scripts/LevelTracker.cs">
     <Files>
-      <File FileName="Assets/Scenes/Scripts/ChangeScene.cs" Line="7" Column="23" />
-      <File FileName="Assets/Scenes/Scripts/winLevel.cs" Line="11" Column="80" />
-      <File FileName="Assets/Scenes/Scripts/QuitGame.cs" Line="4" Column="2" />
+      <File FileName="Assets/Scenes/Scripts/LevelTracker.cs" Line="16" Column="17" />
+      <File FileName="Assets/Scenes/Scripts/HandleData.cs" Line="21" Column="24" />
+      <File FileName="Assets/Scenes/Scripts/PlayerData.cs" Line="8" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -3,12 +3,21 @@ using UnityEngine;
 
 public class winLevel : MonoBehaviour
 {
+    private int placeholder;
     void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.name == "Player")
         {
-            //FindObjectOfType<GameManagerScript>().reload_game();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+
+            SceneManager.LoadScene("LevelsMenu");
+            try
+            {
+                placeholder = int.Parse(SceneManager.GetActiveScene().name[6].ToString());
+                LevelTracker.levelsUnlocked[placeholder - 1] = true;
+            }
+            catch
+            {}
+
         }
     }
 }
