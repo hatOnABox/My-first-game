@@ -28,7 +28,6 @@ public static class HandleData
 
         if (File.Exists(path) == true)
         {
-            Debug.Log("yay");
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
 
@@ -41,7 +40,6 @@ public static class HandleData
         else
         {
             return data1;
-            //return LevelTracker.levelsUnlocked;
         }
     }
 }
