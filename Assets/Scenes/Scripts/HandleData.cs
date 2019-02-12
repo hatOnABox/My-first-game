@@ -5,12 +5,12 @@ using System.Runtime.Serialization.Formatters.Binary;
 // got code from: https://www.youtube.com/watch?v=XOjd_qU2Ido
 public static class HandleData
 {
-    public static bool[] data1;
+    public static bool[] data1 = { false };
     public static void save()
     {
 
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/player.juan";
+        string path = Application.persistentDataPath + "/player.gamedata";
         FileStream stream = new FileStream(path, FileMode.Create);
 
         //PlayerData data = new PlayerData();
@@ -24,9 +24,11 @@ public static class HandleData
 
     public static bool[] load()
     {
-        string path = Application.persistentDataPath + "/player.juan";
+        string path = Application.persistentDataPath + "/player.gamedata";
+
         if (File.Exists(path) == true)
         {
+            Debug.Log("yay");
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
 
@@ -38,8 +40,8 @@ public static class HandleData
         }
         else
         {
-            Debug.Log("Error warning!");
-            return null;
+            return data1;
+            //return LevelTracker.levelsUnlocked;
         }
     }
 }

@@ -9,7 +9,7 @@ public class winLevel : MonoBehaviour
         if (collision.collider.name == "Player")
         {
 
-            SceneManager.LoadScene("LevelsMenu");
+
             try
             {
                 placeholder = int.Parse(SceneManager.GetActiveScene().name[6].ToString());
@@ -17,7 +17,8 @@ public class winLevel : MonoBehaviour
             }
             catch
             {}
-
+            HandleData.save();
+            SceneManager.LoadScene("LevelsMenu");
         }
     }
 }

@@ -11,15 +11,16 @@ public class LevelTracker : MonoBehaviour
     {
         try
         {
-            LevelTracker.levelsUnlocked = HandleData.load();
+            if (HandleData.load() != levelsUnlocked)
+            {
+                levelsUnlocked = HandleData.load();
+            }
+
+
         }
         catch {}
-        HandleData.save();
-     
+        Debug.Log(levelsUnlocked[0]);
 
-        if (LevelTracker.levelsUnlocked[0] == false)
-        {
-            button2.enabled = false;
-        }
+        button2.enabled = levelsUnlocked[0];
     }
 }
