@@ -5,7 +5,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 // got code from: https://www.youtube.com/watch?v=XOjd_qU2Ido
 public static class HandleData
 {
-    public static bool[] data1 = { false };
+    public static bool[] data1 = { false, false };
     public static void save()
     {
 
@@ -13,8 +13,6 @@ public static class HandleData
         string path = Application.persistentDataPath + "/player.gamedata";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        //PlayerData data = new PlayerData();
-        //public static bool[] data = LevelTracker.levelsUnlocked;
         data1 = LevelTracker.levelsUnlocked;
 
         formatter.Serialize(stream, data1);
@@ -28,6 +26,7 @@ public static class HandleData
 
         if (File.Exists(path) == true)
         {
+            //Debug.Log(path);
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
 

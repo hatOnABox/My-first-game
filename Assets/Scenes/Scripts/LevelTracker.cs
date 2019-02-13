@@ -3,9 +3,8 @@ using UnityEngine.UI;
 
 public class LevelTracker : MonoBehaviour
 {
-    //public Button button1;
-    public Button button2;
-    public static bool[] levelsUnlocked = {false}; // list excludes level 1
+    public Button[] buttons = {};
+    public static bool[] levelsUnlocked = {false, false}; // list excludes level 1
 
     void Start()
     {
@@ -18,9 +17,16 @@ public class LevelTracker : MonoBehaviour
 
 
         }
-        catch {}
-        Debug.Log(levelsUnlocked[0]);
+        catch (System.Exception) {
+            ;
+        }
 
-        button2.enabled = levelsUnlocked[0];
+        for (int i = 0; i <= buttons.Length - 1; i++) {
+            buttons[i].enabled = levelsUnlocked[i];
+            if (levelsUnlocked[i] == false)
+            {
+                buttons[i].GetComponent<Image>().color = Color.grey;
+            }
+        }
     }
 }
