@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{95A35F64-19AC-997D-3C35-A3BB4138DB35}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/Scripts/LevelTracker.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/Scripts/PlayerMovement.cs">
     <Files>
-      <File FileName="Assets/Scenes/Scripts/LevelTracker.cs" Line="8" Column="56" />
-      <File FileName="Assets/Scenes/Scripts/HandleData.cs" Line="15" Column="1" />
-      <File FileName="Assets/Scenes/Scripts/winLevel.cs" Line="20" Column="31" />
+      <File FileName="Assets/Scenes/Scripts/LevelTracker.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scenes/Scripts/HandleData.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scenes/Scripts/winLevel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scenes/Scripts/PlayerMovement.cs" Line="18" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

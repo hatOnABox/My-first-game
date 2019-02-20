@@ -13,7 +13,6 @@ public class PlayerMovement : MonoBehaviour
         grounded = true;
     }
 
-
     // Player movement
     void FixedUpdate()
     {
