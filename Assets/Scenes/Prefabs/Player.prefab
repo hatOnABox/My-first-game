@@ -123,3 +123,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 8373843017322060496}
   sidewaysForce: 20
+  player: {fileID: 8373843017322060499}

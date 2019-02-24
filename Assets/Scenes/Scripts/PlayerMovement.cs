@@ -5,13 +5,15 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
 
     public float sidewaysForce = 25f;
-    bool grounded = true;
+    bool grounded;
+
 
     // if player is touching the ground
     void OnCollisionEnter()
     {
         grounded = true;
     }
+
 
     // Player movement
     void FixedUpdate()
