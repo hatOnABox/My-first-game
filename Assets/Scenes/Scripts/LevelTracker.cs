@@ -4,7 +4,9 @@ using UnityEngine.UI;
 public class LevelTracker : MonoBehaviour
 {
     public Button[] buttons = {};
-    public static bool[] levelsUnlocked = {false, false}; // list excludes level 1
+    public static bool[] levelsUnlocked = {false, false, false}; // list excludes level 1
+    private int x;
+
 
     void Start()
     {
@@ -21,12 +23,19 @@ public class LevelTracker : MonoBehaviour
             ;
         }
 
-        for (int i = 0; i <= buttons.Length - 1; i++) {
-            buttons[i].enabled = levelsUnlocked[i];
-            if (levelsUnlocked[i] == false)
+        foreach (bool i in levelsUnlocked)
+        {
+            try
             {
-                buttons[i].GetComponent<Image>().color = Color.grey;
+                buttons[x].enabled = levelsUnlocked[x];
+                if (levelsUnlocked[x] == false)
+                {
+                    buttons[x].GetComponent<Image>().color = Color.grey;
+                }
+            } catch (System.Exception) {
+                ;
             }
+            x++;
         }
     }
 }
