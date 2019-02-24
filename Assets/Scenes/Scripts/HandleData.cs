@@ -5,7 +5,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 // got code from: https://www.youtube.com/watch?v=XOjd_qU2Ido
 public static class HandleData
 {
-    public static bool[] data1 = { false, false, false };
+    public static bool[] data1 = { false, false, false, false, false };
     public static void save()
     {
 
