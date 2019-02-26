@@ -9,7 +9,7 @@ public class fireballMovementX : MonoBehaviour
     // makes the fireball able to move back and forward
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag != "Player" || collision.collider.tag != "Ground" )
+        if (collision.collider.tag == "Obstacle" || collision.collider.tag == "willSendBackBreaking" || collision.collider.tag == "Finish" || collision.collider.tag == "invis")
         { 
             if (movementSpeed == 10f)
             {

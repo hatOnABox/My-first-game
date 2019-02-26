@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Obstacle
   - Ground
+  - willSendBackBreaking
+  - invisWall
+  - moving
+  - breaking
+  - invis
   layers:
   - Default
   - TransparentFX

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class LevelTracker : MonoBehaviour
 {
     public Button[] buttons = {};
-    public static bool[] levelsUnlocked = {false, false, false, false, false, false, false}; // list excludes level 1
+    public static bool[] levelsUnlocked = {false, false, false, false, false, false, false, false, false}; // list excludes level 1
     private int x;
 
 

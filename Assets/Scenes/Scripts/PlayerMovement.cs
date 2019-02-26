@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     // Player movement
     void FixedUpdate()
     {
-        if (rb.position.y < -4)
+        if (rb.position.y < -7)
         {
             FindObjectOfType<GameManagerScript>().reload_game();
         }
